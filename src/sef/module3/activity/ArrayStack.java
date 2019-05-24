@@ -57,7 +57,7 @@ public class ArrayStack {
         //TODO #4: Write decision making code to see if the value of 'count' is 0.
         //If true, set the value of 'temp' to null
         if (count == 0) {
-            temp = null;
+            return temp;
         }
         //END TODO #4
 
@@ -108,7 +108,7 @@ public class ArrayStack {
         //TODO #8: Write code that will check if there are any elements contained in
         //the 'stack' array.  If there array is empty, return null
         if (count == 0) {
-            return null;
+            return temp;
         }
         //END TODO #8
 
