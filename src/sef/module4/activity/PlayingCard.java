@@ -162,12 +162,7 @@ public class PlayingCard {
 			default       : stringSuit = "JOKER";    break;
 		}
 
-		String joker = "JOKER";
-		if (joker.equals(stringNumber) || joker.equals(stringSuit)) {
-			return joker;
-		}
-
-		return stringNumber + " OF " + stringSuit;
+		return "JOKER".equals(stringNumber) ? "JOKER" : stringNumber + " OF " + stringSuit;
 		//END TODO #6
 
 	}
