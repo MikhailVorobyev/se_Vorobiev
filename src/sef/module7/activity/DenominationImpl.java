@@ -69,6 +69,7 @@ public class DenominationImpl implements Denomination {
 
         Denomination denomination = (Denomination) o;
 
-        return this.name.equals(denomination.getName());
+        if (!this.name.equals(denomination.getName())) return false;
+        return this.symbol.equals(denomination.getSymbol());
     }
 }
